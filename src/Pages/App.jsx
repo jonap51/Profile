@@ -6,9 +6,9 @@ const App = () => {
 
 
     return (
-        <div>
+        <div className='flex flex-col justify-center'>
             <Header />
-            <img className='align:center' src='/saitama.png' />
+            <img src='/saitama.png' />
             <Footer />
         </div>
     )

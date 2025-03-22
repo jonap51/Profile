@@ -2,13 +2,13 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            <div>
+        <div className='flex'>
+            <div className='flex-1'>
                 <p>
                     Jonatan
                 </p>
             </div>
-            <nav>
+            <nav className='flex-2'>
                 <a href="#">Inicio</a>
                 <a href="#">Servicios</a>
                 <a href="#">Sobre mi</a>
