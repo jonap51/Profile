@@ -1,27 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    /* #101010;*/
-    font-family: 'ClashDisplay-Bold';
+@theme {
+    --color-violeta-oscuro-style: #180026;
+    --color-violeta-style: #7400B8;
+    --color-verde-style: #80FFDB;
+    --color-azul-style: #5E60CE;
+    --font-archivo: 'Archivo', 'sans-serif';
 }
-
-
-
-:root {
-    --color-violeta-oscuro: #180026;
-    --color-fondo-violeta: #7400B8;
-    --color-fondo-verde: #80FFDB;
-    --color-celeste: #5E60CE;
-}
-
 
 /*Fonts*/
 @font-face {
@@ -57,6 +43,7 @@
     src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Bold.woff') format('woff');
     font-display: swap;
+    font-style: normal;
 }
 
 
