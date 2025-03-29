@@ -1,16 +1,36 @@
 import React from 'react';
+import { MainBack } from './MainBack';
+import { MainFront } from './MaintFront';
 
 const Main = () => {
     return (
-        <div className='flex box-border bg-red-100 w-full h-full'>
+        <div className=' flex justify-center items-center w-full  h-full relative '>
 
-            <img src='/img/w-k.png '
+            <div className='absolute z-30'>
+                <MainFront />
+            </div>
+
+            <MainBack />
+
+            <img
+                src='/img/w-k.png '
                 className='
                 object-cover
-                border-2
-                border-red-600
-                w-full
-                h-full' />
+                w-1/2        
+                h-full
+                z-20
+                ' />
+
+            <p className='
+            absolute
+            font-[CD-Medium]
+            text-[150px]
+            text-white
+            blur-[5px]
+            opacity-20
+            '>
+                Scilicet Developer
+            </p>
 
         </div>
     )

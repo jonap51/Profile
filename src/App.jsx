@@ -3,17 +3,21 @@ import { Footer } from './components/Footer';
 import { AboutMe } from './pages/AboutMe';
 import { Contact } from './pages/Contact';
 import { Hero } from './pages/Hero';
+import { MainFront } from './components/MaintFront';
 
 const App = () => {
 
-    /*   <AboutMe />
+    /*     <Hero />
+      <AboutMe />
             <Contact />
             <Footer />
+   
 */
 
     return (
-        <div className='flex flex-col bg-violeta-oscuro-style px-8 '>
-            <Hero />
+        <div className='flex flex-col bg-black '>
+
+            <MainFront />
         </div>
     )
 }

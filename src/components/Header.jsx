@@ -3,12 +3,12 @@ import React from 'react';
 const Header = () => {
 
     return (
-        <div className='flex box-border'>
-            <div className='flex-1'>
+        <div className='flex '>
+            <div className='flex justify-center pt-8 flex-1 '>
                 <p className='
                 text-4xl
-                font-bold
-                bg-gradient-to-r from-azul-style from-0%  via-white via-30% to-white to-100%
+                font-[CD-SemiBold]
+                bg-gradient-to-r from-azul-style from-0%  via-white via-20% to-white to-100%
                 text-transparent
                 bg-clip-text'>
                     Jonatan Paez
@@ -23,10 +23,10 @@ const Header = () => {
             font-archivo
             font-bold
             text-base'>
-                <a className='hover:text-violeta-style' href="#">Inicio</a>
-                <a className='hover:text-violeta-style' href="#">Servicios</a>
-                <a className='hover:text-violeta-style' href="#">Sobre mi</a>
-                <a className='hover:text-violeta-style' href="#">Contactame</a>
+                <a className='hover:text-azul-style' href="#">Inicio</a>
+                <a className='hover:text-azul-style' href="#">Servicios</a>
+                <a className='hover:text-azul-style' href="#">Sobre mi</a>
+                <a className='hover:text-azul-style' href="#">Contactame</a>
             </nav>
             <div className=' flex-1' />
 

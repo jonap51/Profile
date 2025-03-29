@@ -11,35 +11,35 @@
 
 /*Fonts*/
 @font-face {
-    font-family: 'ClashDisplay-Light';
+    font-family: 'CD-Light';
     src: url('/fonts/ClashDisplay-Light.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Light.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'ClashDisplay-Regular';
+    font-family: 'CD-Regular';
     src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Regular.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'ClashDisplay-Medium';
+    font-family: 'CD-Medium';
     src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Medium.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'ClashDisplay-Semibold';
+    font-family: 'CD-Semibold';
     src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Semibold.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'ClashDisplay-Bold';
+    font-family: 'CD-Bold';
     src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Bold.woff') format('woff');
     font-display: swap;
@@ -48,7 +48,7 @@
 
 
 @font-face {
-    font-family: 'ClashDisplay-Variable';
+    font-family: 'CD-Variable';
     src: url('/fonts/ClashDisplay-Variable.woff2') format('woff2'),
         url('/fonts/ClashDisplay-Variable.woff') format('woff');
     font-style: normal;

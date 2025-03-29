@@ -4,9 +4,8 @@ import { Header } from '../components/Header';
 
 const Hero = () => {
     return (
-        <div className='flex flex-col h-screen pt-2  box-border  border-yellow-400 border-1'>
+        <div className='flex flex-col h-screen box-border overflow-hidden '>
             <Header />
-
             <Main />
 
         </div>
