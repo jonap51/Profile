@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <div className=' flex justify-center items-center w-full  h-full relative '>
 
-            <div className='absolute z-30'>
+            <div className='absolute top-5 z-30'>
                 <MainFront />
             </div>
 

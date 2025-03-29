@@ -7,17 +7,17 @@ import { MainFront } from './components/MaintFront';
 
 const App = () => {
 
-    /*     <Hero />
-      <AboutMe />
+    /*     
+            <AboutMe />
             <Contact />
-            <Footer />
-   
+            <Footer /> 
 */
 
     return (
-        <div className='flex flex-col bg-black '>
 
-            <MainFront />
+        <div className='flex flex-col bg-black '>
+            <Hero />
+
         </div>
     )
 }
