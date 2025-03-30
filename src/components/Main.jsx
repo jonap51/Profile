@@ -6,32 +6,17 @@ const Main = () => {
     return (
         <div className=' flex justify-center items-center w-full  h-full relative '>
 
-            <div className='absolute top-5 z-30'>
+            <div className='absolute top-5 z-40'>
                 <MainFront />
             </div>
 
-            <MainBack />
+            <div className='absolute'>
+                <MainBack />
+            </div>
 
-            <img
-                src='/img/w-k.png '
-                className='
-                object-cover
-                w-1/2        
-                h-full
-                z-20
-                ' />
 
-            <p className='
-            absolute
-            font-[CD-Medium]
-            text-[150px]
-            text-white
-            blur-[5px]
-            opacity-20
-            '>
-                Scilicet Developer
-            </p>
-
+            <img className='object-cover w-1/2 h-full z-20'
+                src='/img/w-k.png ' />
         </div>
     )
 }
