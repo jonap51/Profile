@@ -4,12 +4,12 @@ import { AboutMe } from './pages/AboutMe';
 import { Contact } from './pages/Contact';
 import { Hero } from './pages/Hero';
 import { Proyects } from './pages/Proyects';
+import { CardProjects } from './components/CardProjects';
 
 const App = () => {
 
-    /*     
+    /*       
            
-            <Contact />
             <Footer /> 
 */
 
@@ -19,6 +19,7 @@ const App = () => {
             <Hero />
             <AboutMe />
             <Proyects />
+            <Contact />
 
         </div>
     )

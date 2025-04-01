@@ -14,19 +14,28 @@ const AboutMe = () => {
                 <img src="/vite.svg" alt="" />
             </div>
             { /**Contenedor -Verde- */}
-            <div className='flex justify-between p-8 bg-verde-style  rounded-4xl '>
+            <div className='flex justify-between p-8 bg-verde-style/40  rounded-4xl '>
                 { /**Izquierda del Contenedor */}
                 <div className='flex-2  p-8 '>
                     <div>
                         <h2 className='text-[65px]/18 pb-8 font-[CD-Semibold]'>
-                            Brindando 14 años de excelencia
+                            Enfocado en la excelencia
                         </h2>
                     </div>
                     <div className='text-xl font-archivo '>
-                        <p>14 años trabajando en laboratorios de creación y desarrollo de fragancias, donde se necesita enfoque, precisión, ser metódico y organizado, pensar en el cliente, basarse en datos, resolución de problemas, comunicación, todo eso y más tengo para ofrecer al mundo. Mi pasión por la tecnología hace que esté en constante movimiento, aprendiendo , mejorando, puliendo mis habilidades  </p>
+                        <p>Con 14 años de experiencia en un laboratorio de creación y desarrollo de fragancias, he cultivado habilidades fundamentales que ahora aporto al desarrollo front-end:
+                            <br />
+                            - Precisión y atención al detalle.
+                            <br />
+                            - Enfoque centrado en el cliente, traduciendo necesidades específicas en soluciones que superan expectativas, como interfaces digitales.
+                            <br />
+                            - Metodología basada en datos para la toma de decisiones, aplicando análisis cuantitativo para optimizar experiencias de usuario.
+                            <br />
+                            - Capacidad para resolver problemas complejos de manera organizada y metódica, desglosando desafíos en componentes manejables.
+                        </p>
                     </div>
                     <div className='mt-8'>
-                        <button className='rounded-full border-2 py-3 px-8 font-archivo'>
+                        <button className='rounded-full border-2 py-3 px-8 text-xl font-semibold font-archivo'>
                             Conoce más
                         </button>
                     </div>
