@@ -1,0 +1,32 @@
+.rombos-imagen {
+    width: 200px;
+    height: 200PX;
+    clip-path: polygon(50% 75%, 100% 25%, 75% 0%, 50% 25%, 100% 75%, 75% 100%, 0% 25%, 25% 0%, 50% 25%, 0% 75%, 25% 100%, 50% 75%);
+}
+
+.rayo {
+    width: 150px;
+    height: 200px;
+    clip-path: polygon(27% 0%, 69% 0%, 38% 37%, 69% 37%, 19% 100%, 29% 54%, 4.00% 54%);
+}
+
+
+
+.scroll {
+    animation: scroll 10s linear infinite;
+}
+
+.reverse {
+    animation-direction: reverse;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100%));
+    }
+}
+

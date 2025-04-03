@@ -7,9 +7,9 @@ const Proyects = () => {
         <section className='m-20'>
             <div >
                 <div className='text-[65px]/18 pb-8 font-[CD-Semibold]'>
-                    <h2>Proyectos que hice</h2>
+                    <h2>Mis proyectos</h2>
                 </div>
-                <div className='flex justify-stretch'>
+                <div className='flex '>
 
                     <button className='rounded-full bg-gray-200 py-3 px-8 font-archivo me-8'>
                         All
