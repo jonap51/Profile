@@ -1,37 +1,37 @@
-import React from 'react';
-import '../components/ImagePath.css';
+import React from "react";
+import "../components/ImagePath.css";
+import { ContactForm } from "../components/ContactForm";
 
 const Contact = () => {
     return (
-        <section className='m-20 bg-violeta-oscuro-style p-8'>
-            <div className='flex'>
-
-                <div className='flex-1 justify center items-center'>
-                    <h3 className='font-[CD-Semibold] text-white text-6xl'>
+        <section className="relative flex bg-violeta-oscuro-style p-30 mt-20 overflow-hidden">
+            <div className="flex h-130 justify-center items-center">
+                <div className="flex w-1/2 ">
+                    <h3
+                        className="font-[CD-Semibold] leading-[1.4]
+ text-white text-6xl"
+                    >
                         ¿Quieres
-                        <span className='text-verde-style'> trabajar </span>
-                        conmigo? Por favor
-                        <span> sientete libre </span>
-                        de contactar conmigo.
+                        <span className="text-verde-style"> trabajar </span>
+                        conmigo? Por favor,
+                        <span className="text-verde-style">
+                            {" "}
+                            siéntete libre{" "}
+                        </span>
+                        de contactarme.
                     </h3>
                 </div>
-                <div className='flex-1 border-2 border-white ' >
-                    
-                    <form action="form" className='bg-white'>
-                        <input type="text" className='border-2' />
-                        <textarea name="" id=""> Ingresa</textarea>
 
-                    </form>
-
+                <div className="w-1/2 ms-10 bg-white rounded-4xl border-red z-1">
+                    <ContactForm />
                 </div>
-                <div className='absolute rayo bg-red-600'></div>
-
-
             </div>
 
+            <div className=" absolute bg-white -top-2"> </div>
+            <div className="rayo absolute  bg-violeta-style left-215 bottom-0"></div>
+            <div className="rombos-imagen absolute bg-azul-oscuro-style  -right-5 -top-2"></div>
         </section>
+    );
+};
 
-    )
-}
-
-export { Contact }
+export { Contact };
