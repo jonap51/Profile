@@ -103,7 +103,7 @@ function ContactForm() {
                 Email:
             </label>
             <input
-                className=" border-1 rounded-3xl py-2 text-lg px-5 font-archivo "
+                className=" border-1 rounded-3xl py-2 text-lg px-5 font-archivo  "
                 type="email"
                 id="email"
                 value={email}
@@ -128,7 +128,8 @@ function ContactForm() {
             )}
 
             <button
-                className="mt-5 border rounded-full bg-azul-style text-normal text-white p-3"
+                className="mt-5 border rounded-full bg-azul-style text-normal text-white p-3  
+                transition duration-400 ease-in-out hover:bg-violeta-style hover:scale-101"
                 type="submit"
             >
                 Enviar

@@ -82,7 +82,10 @@ const AboutMe = () => {
                         </p>
                     </div>
                     <div className="mt-8">
-                        <button className="rounded-full border-2 py-3 px-8 text-xl font-semibold font-archivo">
+                        <button
+                            className="rounded-full border-2 border-violeta-oscuro-style py-3 px-8 text-xl font-semibold font-archivo 
+                          hover:bg-black hover:text-white  transition duration-200 ease-in"
+                        >
                             Conoce más
                         </button>
                     </div>

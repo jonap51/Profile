@@ -4,43 +4,45 @@ const CardProjects = () => {
     const data = [
         {
             titulo: "Galeria de imágenes",
-            imagen: "img/gallery.png",
+            imagen: "img/galeria.png",
             altImg: "Imagen de galeria de imagenes",
             fecha: "24/03/2025",
-            descripcion: "Galleria ",
+            descripcion: "Galleria de imagenes usando la api de Unsplash ",
         },
         {
-            titulo: "Página",
+            titulo: "Hero Page",
             imagen: "img/lyre.png",
             altImg: "",
-            fecha: "24/03/2025",
-            descripcion: "Galleria ",
-        },
-        {
-            titulo: "Galeria de imagenes",
-            imagen: "img/gallery.png",
-            altImg: "Descripción alternativa de la imagen 1",
-            fecha: "24/03/2025",
-            descripcion: "Galleria ",
+            fecha: "10/03/2025",
+            descripcion: "Intento recrear el hero de una página de Behance",
         },
     ];
 
     return (
-        <div className=" flex w-1/2 h-1/2 m-8">
+        <div className=" flex gap-30 m-8">
             {data.map((data, index) => (
                 <div
                     key={index}
-                    className="w-100 h-100  border-2 rounded-[50px] overflow-hidden"
+                    className=" flex-col w-125 h-150  rounded-4xl overflow-hidden"
                 >
-                    <img src={data.imagen} alt={data.altImg} className="" />
-                    <div className="my-8 flex-col font-archivo  ">
+                    <div className="h-3/5">
+                        <img
+                            className=" object-cover w-full h-full  rounded-4xl transition duration-400 ease-in-out hover:scale-105"
+                            src={data.imagen}
+                            alt={data.altImg}
+                        />
+                    </div>
+
+                    <div className="mb-8 flex-col font-archivo h-2/5 ">
                         <p className=" text-violeta-style text-lg font-bold mt-3">
                             {data.fecha}
                         </p>
                         <h2 className="my-3 font-[CD-Semibold] text-2xl">
                             {data.titulo}
                         </h2>
-                        <p className="text-xl text-gray-600">descripción</p>
+                        <p className="text-lg text-gray-600">
+                            {data.descripcion}
+                        </p>
                     </div>
                 </div>
             ))}
