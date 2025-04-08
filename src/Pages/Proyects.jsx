@@ -17,9 +17,7 @@ const Proyects = () => {
                     </button>
                 </div>
 
-                <div className="flex">
-                    <CardProjects />
-                    <CardProjects />
+                <div className="">
                     <CardProjects />
                 </div>
             </div>

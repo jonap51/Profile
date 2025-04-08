@@ -77,8 +77,8 @@ function ContactForm() {
                 ¡Formulario enviado con éxito!
             </p>
         );
-    } /*
- animate-[wiggle_1s_ease-in-out_infinite] */
+    }
+
     return (
         <form
             className="px-15 py-13 flex-col flex h-full w-full font-[CD-Medium] text-xl"
