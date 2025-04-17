@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../components/ImagePath.css";
+import { Element } from "react-scroll";
 
 const AboutMe = () => {
     const tools = [
@@ -29,7 +30,6 @@ const AboutMe = () => {
             <div className="flex justify-center text-6xl font-[CD-Semibold] bg-white">
                 Herramientas que utilizo
             </div>
-
             {/* Contenedor de la marquesina */}
             <div className="relative  py-20">
                 {/* Animación de desplazamiento */}
@@ -47,61 +47,70 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-
             {/**Contenedor -Verde- */}
-            <div className="relative flex justify-between my-20 p-8 bg-verde-style/40 overflow-clip rounded-4xl ">
-                {/**Img Path */}
-                <div className="absolute bg-verde-oscuro-style -bottom-5 right-139  rombos-imagen" />
+            <Element name="sobreMi">
+                <div className="relative flex justify-between my-20 p-8 bg-verde-style/40 overflow-clip rounded-4xl ">
+                    {/**Img Path */}
+                    <div className="absolute bg-verde-oscuro-style -bottom-5 right-139  rombos-imagen" />
 
-                {/**Izquierda del Contenedor */}
-                <div className="flex-2  p-8 ">
-                    <div>
-                        <h2 className="text-[65px]/18 pb-8 font-[CD-Semibold]">
-                            Enfocado en la excelencia
-                        </h2>
-                    </div>
-                    <div className="text-xl font-archivo ">
-                        <p>
-                            Con 14 años de experiencia en un laboratorio de
-                            creación y desarrollo de fragancias, he cultivado
-                            habilidades fundamentales que ahora aporto al
-                            desarrollo front-end:
-                            <br />
-                            - Precisión y atención al detalle.
-                            <br />
-                            - Enfoque centrado en el cliente, traduciendo
-                            necesidades específicas en soluciones que superan
-                            expectativas, como interfaces digitales.
-                            <br />
-                            - Metodología basada en datos para la toma de
-                            decisiones, aplicando análisis cuantitativo para
-                            optimizar experiencias de usuario.
-                            <br />- Capacidad para resolver problemas complejos
-                            de manera organizada y metódica, desglosando
-                            desafíos en componentes manejables.
-                        </p>
-                    </div>
-                    <div className="mt-8">
-                        <button
-                            className="rounded-full border-2 border-violeta-oscuro-style py-3 px-8 text-xl font-semibold font-archivo 
+                    {/**Izquierda del Contenedor */}
+                    <div className="flex-2  p-8 ">
+                        <div>
+                            <h2 className="text-[65px]/18 pb-8 font-[CD-Semibold]">
+                                Enfocado en la excelencia
+                            </h2>
+                        </div>
+                        <div className="text-xl font-archivo ">
+                            <p>
+                                Con 14 años de experiencia en un laboratorio de
+                                creación y desarrollo de fragancias, he
+                                cultivado habilidades fundamentales que ahora
+                                aporto al desarrollo front-end:
+                                <br />
+                                - Precisión y atención al detalle.
+                                <br />
+                                - Enfoque centrado en el cliente, traduciendo
+                                necesidades específicas en soluciones que
+                                superan expectativas, como interfaces digitales.
+                                <br />
+                                - Metodología basada en datos para la toma de
+                                decisiones, aplicando análisis cuantitativo para
+                                optimizar experiencias de usuario.
+                                <br />- Capacidad para resolver problemas
+                                complejos de manera organizada y metódica,
+                                desglosando desafíos en componentes manejables.
+                            </p>
+                        </div>
+                        <div className="mt-8">
+                            <button
+                                className="rounded-full border-2 border-violeta-oscuro-style py-3 px-8 text-xl font-semibold font-archivo 
                           hover:bg-black hover:text-white  transition duration-200 ease-in"
-                        >
-                            Conoce más
-                        </button>
+                            >
+                                Conoce más
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                {/**Derecha del contenerdo */}
-                <div className=" flex-1  overflow-hidden flex-col">
-                    <div className="flex justify-center h-1/2 ">
-                        <img src="vite.svg" alt="" />
-                    </div>
-                    <div className="flex justify-evenly h-1/2 ">
-                        <img className="w-1/2 h-full" src="vite.svg" alt="" />
-                        <img className="w-1/2 h-full" src="vite.svg" alt="" />
+                    {/**Derecha del contenerdo */}
+                    <div className=" flex-1  overflow-hidden flex-col">
+                        <div className="flex justify-center h-1/2 ">
+                            <img src="vite.svg" alt="" />
+                        </div>
+                        <div className="flex justify-evenly h-1/2 ">
+                            <img
+                                className="w-1/2 h-full"
+                                src="vite.svg"
+                                alt=""
+                            />
+                            <img
+                                className="w-1/2 h-full"
+                                src="vite.svg"
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Element>
         </div>
     );
 };

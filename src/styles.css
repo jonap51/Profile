@@ -1,58 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
     --color-violeta-oscuro-style: #180026;
-    --color-violeta-style: #7400B8;
+    --color-violeta-style: #7400b8;
     --color-verde-oscuro-style: #5bb59b;
-    --color-verde-style: #80FFDB;
+    --color-verde-style: #80ffdb;
     --color-azul-oscuro-style: #343571;
-    --color-azul-style: #5E60CE;
-    --font-archivo: 'Archivo', 'sans-serif';
+    --color-azul-style: #5e60ce;
+    --font-archivo: "Archivo", "sans-serif";
 }
 
-/*Fonts*/
+/*Fonts que tuvieron que descargarse*/
 @font-face {
-    font-family: 'CD-Light';
-    src: url('/fonts/ClashDisplay-Light.woff2') format('woff2'),
-        url('/fonts/ClashDisplay-Light.woff') format('woff');
+    font-family: "CD-Light";
+    src: url("/fonts/ClashDisplay-Light.woff2") format("woff2"),
+        url("/fonts/ClashDisplay-Light.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'CD-Regular';
-    src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-        url('/fonts/ClashDisplay-Regular.woff') format('woff');
+    font-family: "CD-Regular";
+    src: url("/fonts/ClashDisplay-Regular.woff2") format("woff2"),
+        url("/fonts/ClashDisplay-Regular.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'CD-Medium';
-    src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-        url('/fonts/ClashDisplay-Medium.woff') format('woff');
+    font-family: "CD-Medium";
+    src: url("/fonts/ClashDisplay-Medium.woff2") format("woff2"),
+        url("/fonts/ClashDisplay-Medium.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'CD-Semibold';
-    src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-        url('/fonts/ClashDisplay-Semibold.woff') format('woff');
+    font-family: "CD-Semibold";
+    src: url("/fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+        url("/fonts/ClashDisplay-Semibold.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'CD-Bold';
-    src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-        url('/fonts/ClashDisplay-Bold.woff') format('woff');
+    font-family: "CD-Bold";
+    src: url("/fonts/ClashDisplay-Bold.woff2") format("woff2"),
+        url("/fonts/ClashDisplay-Bold.woff") format("woff");
     font-display: swap;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'CD-Variable';
-    src: url('/fonts/ClashDisplay-Variable.woff2') format('woff2'),
-        url('/fonts/ClashDisplay-Variable.woff') format('woff');
+    font-family: "CD-Variable";
+    src: url("/fonts/ClashDisplay-Variable.woff2") format("woff2"),
+        url("/fonts/ClashDisplay-Variable.woff") format("woff");
     font-style: normal;
     font-display: swap;
+}
+
+/* Estilo personalizados */
+.progressive-underline {
+    position: relative;
+}
+.progressive-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Ajusta la distancia del underline del texto */
+    width: 0;
+    height: 2px;
+    background-color: #5e60ce;
+}
+
+.progressive-underline:hover::after {
+    animation: progressive-underline-animation 0.3s ease-out forwards;
+}
+
+@keyframes progressive-underline-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }
