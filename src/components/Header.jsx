@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Header = () => {
     return (
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
             <div className="flex w-[calc(100vw-20em)]">
                 <div className="flex-1  pt-8">
                     <p
@@ -20,7 +20,7 @@ const Header = () => {
                                 to="inicio"
                                 smooth={true}
                                 duration={600}
-                                className="hover:text-azul-style progressive-underline cursor-pointer"
+                                className="hover:text-azul-style  progressive-underline cursor-pointer"
                             >
                                 Inicio
                             </Link>

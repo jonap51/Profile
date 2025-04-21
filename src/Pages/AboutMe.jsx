@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import "../components/ImagePath.css";
 import { Element } from "react-scroll";
 
@@ -21,9 +21,10 @@ const AboutMe = () => {
         { name: "Figma", image: "https://skillicons.dev/icons?i=figma" },
     ];
 
-    const trackRef = useRef(null);
-    const positionRef = useRef(0);
-    const [images, setImages] = useState(tools);
+    // Duplico el set de imágenes
+    const duplicatedTools = useMemo(() => {
+        return [...tools, ...tools];
+    }, [tools]); // El useMemo ayuda si 'tools' fuera dinámico, aquí es más por convención
 
     return (
         <div className="mx-30 my-20 relative ">
@@ -31,20 +32,18 @@ const AboutMe = () => {
                 Herramientas que utilizo
             </div>
             {/* Contenedor de la marquesina */}
-            <div className="relative  py-20">
+            <div className="marquee-window py-20">
                 {/* Animación de desplazamiento */}
-                <div className="  flex whitespace-nowrap">
+                <div className=" marquee-content whitespace-nowrap">
                     {/* Imagenes para crear el loop continuo */}
-                    <div className=" scroll  delay-0 flex mx-4" ref={trackRef}>
-                        {tools.map((tool, index) => (
-                            <img
-                                key={index}
-                                src={tool.image}
-                                alt={tool.name}
-                                className="h-[4.5em] w-auto mx-8"
-                            />
-                        ))}
-                    </div>
+                    {duplicatedTools.map((tool, index) => (
+                        <img
+                            key={index}
+                            src={tool.image}
+                            alt={tool.name}
+                            className="h-[4.5em] w-[4.5em] mx-8 flex-shrink-0"
+                        />
+                    ))}
                 </div>
             </div>
             {/**Contenedor -Verde- */}

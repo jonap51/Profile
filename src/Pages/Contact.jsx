@@ -6,10 +6,7 @@ import { Element } from "react-scroll";
 const Contact = () => {
     return (
         <Element name="contactame">
-            <section
-                id="contactame"
-                className="relative flex bg-violeta-oscuro-style p-30 mt-20 overflow-hidden"
-            >
+            <section className="relative flex bg-violeta-oscuro-style p-30 mt-20 overflow-hidden">
                 <div className="flex h-130 justify-center items-center">
                     <div className="flex w-1/2 ">
                         <h3
@@ -32,7 +29,12 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className=" absolute bg-white -top-2"> </div>
+                <img
+                    className="absolute opacity-50 -top-20 -left-20 w-75 h-75 "
+                    src="./img/estrella.svg"
+                    alt="image svg"
+                />
+
                 <div className="rayo absolute  bg-violeta-style left-215 bottom-0"></div>
                 <div className="rombos-imagen absolute bg-azul-oscuro-style  -right-5 -top-2"></div>
             </section>

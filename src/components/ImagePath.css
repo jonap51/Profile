@@ -1,54 +1,90 @@
+/*Imagen de Rombos*/
 .rombos-imagen {
     width: 200px;
-    height: 200PX;
-    clip-path: polygon(50% 75%, 100% 25%, 75% 0%, 50% 25%, 100% 75%, 75% 100%, 0% 25%, 25% 0%, 50% 25%, 0% 75%, 25% 100%, 50% 75%);
+    height: 200px;
+    clip-path: polygon(
+        50% 75%,
+        100% 25%,
+        75% 0%,
+        50% 25%,
+        100% 75%,
+        75% 100%,
+        0% 25%,
+        25% 0%,
+        50% 25%,
+        0% 75%,
+        25% 100%,
+        50% 75%
+    );
 }
-
+/*Imagen de Rayo*/
 .rayo {
     width: 150px;
     height: 200px;
-    clip-path: polygon(27% 0%, 69% 0%, 38% 37%, 69% 37%, 19% 100%, 29% 54%, 4.00% 54%);
+    clip-path: polygon(
+        27% 0%,
+        69% 0%,
+        38% 37%,
+        69% 37%,
+        19% 100%,
+        29% 54%,
+        4% 54%
+    );
 }
 
-
-
-.scroll {
-    animation: scroll 10s linear infinite;
+/*Marquesina degradado inicio y final*/
+.marquee-window {
+    position: relative;
+    overflow: hidden;
 }
 
-.reverse {
-    animation-direction: reverse;
+.marquee-window::before,
+.marquee-window::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 1;
+    pointer-events: none;
 }
 
-@keyframes scroll {
+/* --- Degradado del Borde Izquierdo --- */
+.marquee-window::before {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+/* --- Degradado del Borde Derecho --- */
+.marquee-window::after {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+/*Marquesina*/
+.marquee-content {
+    display: flex;
+    animation: scroll-left linear infinite;
+    animation-duration: 25s;
+}
+
+@keyframes scroll-left {
     from {
         transform: translateX(0);
     }
-
     to {
-        transform: translateX(calc(-100%));
+        /* Calculo la distancia: 12 imágenes * (Ancho Imagen + Margen Izq + Margen Der) */
+        /* Asumo 4.5em = 72px y mx-8 = 32px izq + 32px der = 64px por imagen */
+        /* Distancia = 12 * (72px + 64px) = 12 * 136px = 1632px */
+        /* Siento un pequeño salto entre imágenes, así que bajo 2px quedando 1630px */
+        transform: translateX(-1630px);
     }
-}
-
-.algo{
-clip-path: polygon(50% 0%,
-    /* Punto superior */
-    53.09% 38.27%,
-    61.54% 70.71%,
-    69.13% 92.39%,
-    70.71% 100%,
-    /* Punto derecho */
-    69.13% 107.61%,
-    61.54% 129.29%,
-    53.09% 161.73%,
-    50% 200%,
-    /* Punto inferior */
-    46.91% 161.73%,
-    38.46% 129.29%,
-    30.87% 107.61%,
-    29.29% 100%,
-    /* Punto izquierdo */
-    30.87% 92.39%,
-    38.46% 70.71%,
-    46.91% 38.27%);
 }
