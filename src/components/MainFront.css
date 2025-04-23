@@ -2,15 +2,18 @@
     position: relative;
 }
 
+/*Marco con degrades*/
 .marco::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 20px;
     padding: 2px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.123), rgb(230, 230, 230));
-    mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.123),
+        rgb(230, 230, 230)
+    );
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     mask-composite: exclude;
 }

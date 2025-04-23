@@ -18,15 +18,18 @@ const MainFront = () => {
             </div>
 
             <div className="flex h-2/5">
-                <div className="relative flex justify-center w-1/2">
-                    {/**Contenerdor del Blur para que no salga afuera */}
-                    <div className="absolute w-md h-45 overflow-hidden rounded-[20px]">
+                <div className=" flex justify-center w-1/2 ">
+                    {/**Contenerdor del Blur para que no salga afuera   */}
+                    <div className="absolute w-md h-45 overflow-hidden rounded-[20px] ">
+                        {/*Borde luminoso */}
+                        <div className="absolute marco-de-luz h-45 w-md">
+                            <div className=" absolute -top-38 -right-7 h-[500px] w-[500px]  bg-conic-67 from-transparent via-transparent via-90% to-white animate-[spin_6s_linear_infinite] -scale-x-100 "></div>
+                        </div>
                         {/**Blur*/}
                         <div className=" h-full w-full bg-white/10 backdrop-blur-md " />
-                        <div className="bg-conic-30"></div>
                     </div>
                     {/**Marco contenedor */}
-                    <div className="flex max-w-md h-45 marco ">
+                    <div className=" flex max-w-md h-45 marco  ">
                         <div className="px-6  py-3  ">
                             <div className="flex justify-between items-center">
                                 <div className="font-[CD-SemiBold] text-3xl text-white mb-2">
@@ -61,3 +64,7 @@ const MainFront = () => {
 };
 
 export { MainFront };
+
+/*
+ bg-conic-67 from-transparent via-transparent via-90% to-white   "
+animate-[spin_6s_linear_infinite] -scale-x-100*/
