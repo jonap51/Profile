@@ -19,13 +19,13 @@
 }
 /*Imagen de Rayo*/
 .rayo {
-    width: 150px;
-    height: 200px;
+    width: 180px;
+    height: 240px;
     clip-path: polygon(
-        27% 0%,
-        69% 0%,
-        38% 37%,
-        69% 37%,
+        29% 0%,
+        80% 0%,
+        45% 35%,
+        69% 35%,
         19% 100%,
         29% 54%,
         4% 54%
