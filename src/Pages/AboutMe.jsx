@@ -51,9 +51,8 @@ const AboutMe = () => {
                 <div className="relative flex justify-between my-20 p-8 bg-verde-style/40 overflow-clip rounded-4xl ">
                     {/**Img Path */}
                     <div className="absolute bg-verde-oscuro-style -bottom-5 right-139  rombos-imagen" />
-
                     {/**Izquierda del Contenedor */}
-                    <div className="flex-2  p-8 ">
+                    <div className="flex-2 px-8 ">
                         <div>
                             <h2 className="text-[65px]/18 pb-8 font-[CD-Semibold]">
                                 Enfocado en la excelencia
@@ -91,20 +90,24 @@ const AboutMe = () => {
                     </div>
 
                     {/**Derecha del contenerdo */}
-                    <div className=" flex-1  overflow-hidden flex-col">
-                        <div className="flex justify-center h-1/2 ">
-                            <img src="vite.svg" alt="" />
-                        </div>
-                        <div className="flex justify-evenly h-1/2 ">
+                    <div className=" flex flex-col justify-center items-center z-1 flex-1 h-120 w-100 overflow-hidden">
+                        <div className="flex items-center justify-center h-1/2 w-full p-4">
                             <img
-                                className="w-1/2 h-full"
-                                src="vite.svg"
-                                alt=""
+                                className="rounded-xl object-cover w-full h-full"
+                                src="img/img-1.webp"
+                                alt="persona de espalda escribiendo código y con una remera que dice react"
+                            />
+                        </div>
+                        <div className="flex justify-evenly h-1/2 w-full gap-x-10 p-4">
+                            <img
+                                className="rounded-xl object-cover w-1/2 h-full"
+                                src="img/img-2.webp"
+                                alt="persona con 3 monitores y se ven árboles desde la ventana"
                             />
                             <img
-                                className="w-1/2 h-full"
+                                className="rounded-xl object-cover w-1/2 h-full"
                                 src="vite.svg"
-                                alt=""
+                                alt="imagen de simulación 3"
                             />
                         </div>
                     </div>

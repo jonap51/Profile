@@ -100,7 +100,7 @@ function ContactForm() {
 
             {/* ... (campos y errores) ... */}
             <label className="mb-1 mt-5" htmlFor="email">
-                Email:
+                Tu Email:
             </label>
             <input
                 className=" border-1 rounded-3xl py-2 text-lg px-5 font-archivo  "

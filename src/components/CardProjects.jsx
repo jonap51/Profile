@@ -4,14 +4,14 @@ const CardProjects = () => {
     const data = [
         {
             titulo: "Galeria de imágenes",
-            imagen: "img/galeria.png",
+            imagen: "img/galeria.webp",
             altImg: "Imagen de galeria de imagenes",
             fecha: "24/03/2025",
             descripcion: "Galleria de imagenes usando la api de Unsplash ",
         },
         {
             titulo: "Hero Page",
-            imagen: "img/lyre.png",
+            imagen: "img/lyre.webp",
             altImg: "",
             fecha: "10/03/2025",
             descripcion: "Intento recrear el hero de una página de Behance",
