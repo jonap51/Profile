@@ -4,7 +4,7 @@ import { MainFront } from "./MaintFront";
 
 const Main = () => {
     return (
-        <div className=" flex justify-center items-center w-full  h-full relative ">
+        <div className=" flex justify-center mt-20 items-center w-full  h-full relative ">
             {/*Capa Frontal */}
             <div className="absolute top-5 z-40">
                 <MainFront />

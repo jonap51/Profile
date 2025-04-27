@@ -1,20 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 const Header = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const getBackgroundStyle = () => {
+        if (scrollPosition < 200) {
+            const progress = scrollPosition / 200;
+            const opacity = progress * 1;
+            return { backgroundColor: `rgba(24, 0, 38, ${opacity})` };
+        } else {
+            return { backgroundColor: "rgba(24, 0, 38)" };
+        }
+    };
+
     return (
-        <div className="flex justify-center">
-            <div className="flex w-[calc(100vw-20em)]">
-                <div className="flex-1  pt-8">
+        <div
+            className="flex z-50 w-full justify-center py-4 fixed transition-colors duration-300"
+            style={getBackgroundStyle()}
+        >
+            <div className="flex items-center w-[calc(100vw-20em)] ">
+                <div className="flex-1 ">
                     <p
-                        className="text-4xl font-[CD-SemiBold] justify-center text-transparent bg-clip-text
+                        className="flex text-4xl font-[CD-SemiBold] items-start  text-transparent bg-clip-text
                 bg-gradient-to-r from-azul-style from-0%  via-white via-40% to-white to-100%"
                     >
                         Jonatan Paez
                     </p>
                 </div>
                 <nav className=" flex flex-1 ">
-                    <ul className="flex  w-full justify-around items-end text-white font-archivo font-bold text-base ">
+                    <ul className="flex  w-full justify-around  text-white font-archivo font-bold text-base ">
                         <li>
                             <Link
                                 to="inicio"

@@ -32,3 +32,60 @@
         100% 0%
     );
 }
+
+/*Marquesina degradado inicio y final*/
+.marquee-window {
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee-window::before,
+.marquee-window::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* --- Degradado del Borde Izquierdo --- */
+.marquee-window::before {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+/* --- Degradado del Borde Derecho --- */
+.marquee-window::after {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+/*Marquesina*/
+.marquee-content {
+    display: flex;
+    animation: scroll-left linear infinite;
+    animation-duration: 25s;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Calculo la distancia: 12 imágenes * (Ancho Imagen + Margen Izq + Margen Der) */
+        /* Asumo 4.5em = 72px y mx-8 = 32px izq + 32px der = 64px por imagen */
+        /* Distancia = 12 * (72px + 64px) = 12 * 136px = 1632px */
+        /* Siento un pequeño salto entre imágenes, así que bajo 2px quedando 1630px */
+        transform: translateX(-1630px);
+    }
+}
