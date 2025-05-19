@@ -27,7 +27,7 @@ const CardProjects = () => {
                     className=" flex-col w-125 h-150  rounded-4xl overflow-hidden"
                 >
                     <div className="h-3/5">
-                        <a className="h-20" href={data.ref} target="_blank">
+                        <a href={data.ref} target="_blank">
                             <img
                                 className=" object-cover w-full h-full  rounded-4xl transition duration-400 ease-in-out hover:scale-105"
                                 src={data.imagen}
