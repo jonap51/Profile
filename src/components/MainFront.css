@@ -89,3 +89,30 @@
         transform: translateX(-1630px);
     }
 }
+
+/* Estilo personalizados */
+.progressive-underline {
+    position: relative;
+}
+.progressive-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /*distancia del underline del texto */
+    width: 0;
+    height: 2px;
+    background-color: #5e60ce;
+}
+
+.progressive-underline:hover::after {
+    animation: progressive-underline-animation 0.3s ease-out forwards;
+}
+
+@keyframes progressive-underline-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

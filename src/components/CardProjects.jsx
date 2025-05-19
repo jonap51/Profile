@@ -8,6 +8,7 @@ const CardProjects = () => {
             altImg: "Imagen de galeria de imagenes",
             fecha: "24/03/2025",
             descripcion: "Galleria de imagenes usando la api de Unsplash ",
+            ref: "https://jonap51.github.io/Gallery-React/",
         },
         {
             titulo: "Hero Page",
@@ -26,11 +27,13 @@ const CardProjects = () => {
                     className=" flex-col w-125 h-150  rounded-4xl overflow-hidden"
                 >
                     <div className="h-3/5">
-                        <img
-                            className=" object-cover w-full h-full  rounded-4xl transition duration-400 ease-in-out hover:scale-105"
-                            src={data.imagen}
-                            alt={data.altImg}
-                        />
+                        <a className="h-20" href={data.ref} target="_blank">
+                            <img
+                                className=" object-cover w-full h-full  rounded-4xl transition duration-400 ease-in-out hover:scale-105"
+                                src={data.imagen}
+                                alt={data.altImg}
+                            />
+                        </a>
                     </div>
 
                     <div className="mb-8 flex-col font-archivo h-2/5 ">

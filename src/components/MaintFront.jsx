@@ -64,7 +64,3 @@ const MainFront = () => {
 };
 
 export { MainFront };
-
-/*
- bg-conic-67 from-transparent via-transparent via-90% to-white   "
-animate-[spin_6s_linear_infinite] -scale-x-100*/

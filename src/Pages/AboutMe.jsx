@@ -54,11 +54,11 @@ const AboutMe = () => {
                     {/**Izquierda del Contenedor */}
                     <div className="flex-2 px-8 ">
                         <div>
-                            <h2 className="text-[65px]/18 pb-8 font-[CD-Semibold]">
+                            <h2 className="text-[65px]/18 mb-8 font-[CD-Semibold]">
                                 Enfocado en la excelencia
                             </h2>
                         </div>
-                        <div className="text-xl font-archivo ">
+                        <div className="text-xl font-archivo pb-5">
                             <p>
                                 Con 14 años de experiencia en un laboratorio de
                                 creación y desarrollo de fragancias, he
@@ -80,12 +80,15 @@ const AboutMe = () => {
                             </p>
                         </div>
                         <div className="mt-8">
-                            <button
-                                className="rounded-full border-2 border-violeta-oscuro-style py-3 px-8 text-xl font-semibold font-archivo 
+                            <a
+                                className="rounded-full border-2 border-violeta-oscuro-style py-4 px-8 text-xl font-semibold font-archivo 
                           hover:bg-black hover:text-white  transition duration-200 ease-in"
+                                href="https://www.linkedin.com/in/jonatan-paez/"
+                                target="blank"
+                                rel="noopener noreferrer"
                             >
                                 Conoce más
-                            </button>
+                            </a>
                         </div>
                     </div>
 
