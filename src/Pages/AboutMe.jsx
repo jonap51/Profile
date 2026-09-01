@@ -21,44 +21,43 @@ const AboutMe = () => {
     { name: 'Figma', image: 'https://skillicons.dev/icons?i=figma' }
   ]
 
-  // Duplico el set de imágenes
   const duplicatedTools = useMemo(() => {
     return [...tools, ...tools]
-  }, [tools]) // El useMemo ayuda si 'tools' fuera dinámico, aquí es más por convención
+  }, [tools])
 
   return (
-    <div className='mx-30 my-20 relative '>
-      <div className='flex justify-center text-6xl font-[CD-Semibold] bg-white'>
+    <div className='mx-4 sm:mx-10 md:mx-30 my-10 md:my-20 relative'>
+      <div className='flex justify-center text-3xl sm:text-5xl md:text-6xl font-[CD-Semibold] bg-white text-center'>
         Herramientas que utilizo
       </div>
       {/* Contenedor de la marquesina */}
-      <div className='marquee-window py-20'>
-        {/* Animación de desplazamiento */}
-        <div className=' marquee-content whitespace-nowrap'>
-          {/* Imagenes para crear el loop continuo */}
+      <div className='marquee-window py-10 md:py-20'>
+        <div className='marquee-content whitespace-nowrap'>
           {duplicatedTools.map((tool, index) => (
             <img
               key={index}
               src={tool.image}
               alt={tool.name}
-              className='h-[4.5em] w-[4.5em] mx-8 flex-shrink-0'
+              className='h-[3em] w-[3em] md:h-[4.5em] md:w-[4.5em] mx-4 md:mx-8 flex-shrink-0'
             />
           ))}
         </div>
       </div>
+
       {/** Contenedor -Verde- */}
       <Element name='sobreMi'>
-        <div className='relative flex justify-between my-20 p-8 bg-verde-style/40 overflow-clip rounded-4xl '>
+        <div className='relative flex flex-col md:flex-row justify-between my-10 md:my-20 p-5 md:p-8 bg-verde-style/40 overflow-clip rounded-4xl'>
           {/** Img Path */}
-          <div className='absolute bg-verde-oscuro-style -bottom-5 right-139  rombos-imagen' />
+          <div className='hidden md:block absolute bg-verde-oscuro-style -bottom-5 right-139 rombos-imagen' />
+
           {/** Izquierda del Contenedor */}
-          <div className='flex-2 px-8 '>
+          <div className='flex-2 px-2 md:px-8'>
             <div>
-              <h2 className='text-[65px]/18 mb-8 font-[CD-Semibold]'>
+              <h2 className='text-4xl md:text-[65px]/18 mb-5 md:mb-8 font-[CD-Semibold]'>
                 Enfocado en la excelencia
               </h2>
             </div>
-            <div className='text-xl font-archivo pb-5'>
+            <div className='text-base md:text-xl font-archivo pb-5'>
               <p>
                 Con 14 años de experiencia en un laboratorio de
                 creación y desarrollo de fragancias, he
@@ -79,10 +78,10 @@ const AboutMe = () => {
                 desglosando desafíos en componentes manejables.
               </p>
             </div>
-            <div className='mt-8'>
+            <div className='mt-6 md:mt-8'>
               <a
-                className='rounded-full border-2 border-violeta-oscuro-style py-4 px-8 text-xl font-semibold font-archivo
-                          hover:bg-black hover:text-white  transition duration-200 ease-in'
+                className='rounded-full border-2 border-violeta-oscuro-style py-3 px-6 md:py-4 md:px-8 text-lg md:text-xl font-semibold font-archivo
+                          hover:bg-black hover:text-white transition duration-200 ease-in'
                 href='https://www.linkedin.com/in/jonatan-paez/'
                 target='blank'
                 rel='noopener noreferrer'
@@ -92,8 +91,8 @@ const AboutMe = () => {
             </div>
           </div>
 
-          {/** Derecha del contenerdo */}
-          <div className=' flex flex-col justify-center items-center z-1 flex-1 h-120 w-100 overflow-hidden'>
+          {/** Derecha del contenedor - oculto en mobile */}
+          <div className='hidden md:flex flex-col justify-center items-center z-1 flex-1 h-120 w-100 overflow-hidden mt-6 md:mt-0'>
             <div className='flex items-center justify-center h-1/2 w-full p-4'>
               <img
                 className='rounded-xl object-cover w-full h-full'

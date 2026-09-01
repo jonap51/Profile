@@ -81,7 +81,7 @@ function ContactForm () {
 
   return (
     <form
-      className='px-15 py-13 flex-col flex h-full w-full font-[CD-Medium] text-xl'
+      className='px-6 py-8 md:px-15 md:py-13 flex-col flex h-full w-full font-[CD-Medium] text-xl'
       onSubmit={manejarEnvio}
     >
       <label className='mb-1' htmlFor='nombre'>

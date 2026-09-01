@@ -20,30 +20,30 @@ const CardProjects = () => {
   ]
 
   return (
-    <div className=' flex gap-30 m-8'>
+    <div className='flex flex-col sm:flex-row gap-8 sm:gap-10 md:gap-30 m-4 md:m-8'>
       {data.map((data, index) => (
         <div
           key={index}
-          className=' flex-col w-125 h-150  rounded-4xl overflow-hidden'
+          className='flex-col w-full sm:w-80 md:w-125 h-auto rounded-4xl overflow-hidden'
         >
-          <div className='h-3/5'>
+          <div className='h-60 sm:h-72 md:h-[60%]'>
             <a href={data.ref} target='_blank' rel='noreferrer'>
               <img
-                className=' object-cover w-full h-full  rounded-4xl transition duration-400 ease-in-out hover:scale-105'
+                className='object-cover w-full h-full rounded-4xl transition duration-400 ease-in-out hover:scale-105'
                 src={data.imagen}
                 alt={data.altImg}
               />
             </a>
           </div>
 
-          <div className='mb-8 flex-col font-archivo h-2/5 '>
-            <p className=' text-violeta-style text-lg font-bold mt-3'>
+          <div className='mb-6 flex-col font-archivo'>
+            <p className='text-violeta-style text-lg font-bold mt-3'>
               {data.fecha}
             </p>
-            <h2 className='my-3 font-[CD-Semibold] text-2xl'>
+            <h2 className='my-2 font-[CD-Semibold] text-xl md:text-2xl'>
               {data.titulo}
             </h2>
-            <p className='text-lg text-gray-600'>
+            <p className='text-base md:text-lg text-gray-600'>
               {data.descripcion}
             </p>
           </div>
