@@ -22,18 +22,19 @@ const MainFront = () => {
       <div className='flex flex-col md:flex-row h-auto md:h-2/5 gap-6 md:gap-0 mt-4 md:mt-0'>
         {/* Card Profesional */}
         <div className='flex justify-center w-full md:w-1/2'>
-          {/** Contenedor Blur */}
-          <div className='absolute w-xs md:w-md h-40 md:h-45 overflow-hidden rounded-[20px]'>
-            {/* Borde luminoso */}
-            <div className='absolute marco-de-luz h-40 md:h-45 w-xs md:w-md'>
-              <div className='absolute -top-38 -right-7 h-[500px] w-[500px] bg-conic-67 from-transparent via-transparent via-90% to-white animate-[spin_6s_linear_infinite] -scale-x-100' />
+          {/* Wrapper único que define el tamaño — blur y contenido heredan de aquí */}
+          <div className='relative w-xs md:w-md h-40 md:h-45 marco overflow-hidden'>
+            {/** Capa Blur — absolute inset-0 siempre igual al padre */}
+            <div className='absolute inset-0 overflow-hidden rounded-[20px]'>
+              {/* Borde luminoso */}
+              <div className='absolute marco-de-luz inset-0'>
+                <div className='absolute -top-38 -right-7 h-[500px] w-[500px] bg-conic-67 from-transparent via-transparent via-90% to-white animate-[spin_6s_linear_infinite] -scale-x-100' />
+              </div>
+              {/** Blur */}
+              <div className='h-full w-full bg-white/10 backdrop-blur-md' />
             </div>
-            {/** Blur */}
-            <div className='h-full w-full bg-white/10 backdrop-blur-md' />
-          </div>
-          {/** Marco contenedor */}
-          <div className='flex w-xs md:max-w-md h-40 md:h-45 marco'>
-            <div className='px-4 md:px-6 py-3'>
+            {/** Contenido — relative z-10 encima del blur */}
+            <div className='relative z-10 px-4 md:px-6 py-3 h-full flex flex-col justify-between'>
               <div className='flex justify-between items-center'>
                 <div className='font-[CD-SemiBold] text-xl md:text-3xl text-white mb-2'>
                   Profesional

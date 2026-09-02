@@ -16,6 +16,8 @@
     );
     mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     mask-composite: exclude;
+    z-index: 30;
+    pointer-events: none;
 }
 
 .marco-de-luz {
