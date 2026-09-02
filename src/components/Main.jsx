@@ -16,7 +16,7 @@ const Main = () => {
       {/* Foto Central - oculta en móvil, visible desde md */}
       <img
         className='hidden md:block object-cover md:w-1/2 h-full z-20'
-        src='img/gimp-canvas-proom.webp'
+        src={`${import.meta.env.BASE_URL}img/gimp-canvas-proom.webp`}
         alt='desarrollador sonriendo'
       />
     </div>
