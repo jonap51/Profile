@@ -1,14 +1,10 @@
 import React from 'react'
-import { AboutMe } from './pages/AboutMe'
-import { Contact } from './pages/Contact'
-import { Hero } from './pages/Hero'
-import { Proyects } from './pages/Proyects'
+import { AboutMe } from './Pages/AboutMe'
+import { Contact } from './Pages/Contact'
+import { Hero } from './Pages/Hero'
+import { Proyects } from './Pages/Proyects'
 
 const App = () => {
-  /*
-
-            <Footer />
-*/
 
   return (
     <div className='flex flex-col bg-white'>
