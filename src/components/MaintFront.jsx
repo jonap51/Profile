@@ -3,10 +3,10 @@ import './MainFront.css'
 
 const MainFront = () => {
   return (
-    <div className='w-full md:w-[calc(100vw-15em)] h-auto md:h-[calc(100vh-7em)] pt-8 px-4 md:px-0'>
+    <div className='w-full md:w-[calc(100vw-20em)] mx-auto h-auto md:h-[calc(100vh-7em)] pt-8 px-4 md:px-0'>
       {/* Fila superior: nombre + tagline */}
       <div className='flex flex-col md:flex-row h-auto md:h-3/5'>
-        <p className='p-4 md:p-8 w-full md:w-2/3 text-white font-[CD-SemiBold] text-5xl sm:text-6xl md:text-8xl'>
+        <p className='p-4 md:py-8 md:pr-8 md:pl-0 w-full md:w-2/3 text-white font-[CD-SemiBold] text-5xl sm:text-6xl md:text-8xl'>
           Soy
           <br />
           Jonatan Paez
