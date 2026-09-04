@@ -39,8 +39,8 @@ const Header = () => {
         className='flex z-50 w-full justify-center py-4 fixed transition-colors duration-300'
         style={getBackgroundStyle()}
       >
-        {/* Desktop layout */}
-        <div className='hidden md:flex items-center w-[calc(100vw-20em)]'>
+        {/* Desktop layout — igual que antes, recién desde xl para que no se pisen al achicar */}
+        <div className='hidden xl:flex items-center w-[calc(100vw-20em)]'>
           <div className='flex-1'>
             <p
               className='flex text-4xl font-[CD-SemiBold] items-start text-transparent bg-clip-text
@@ -69,8 +69,8 @@ const Header = () => {
           <div className='flex-1' />
         </div>
 
-        {/* Mobile layout */}
-        <div className='flex md:hidden items-center justify-between w-full px-6'>
+        {/* Mobile / tablet — el mismo menú que ya estaba bien en celular */}
+        <div className='flex xl:hidden items-center justify-between w-full px-6'>
           <p
             className='text-2xl font-[CD-SemiBold] text-transparent bg-clip-text
                 bg-gradient-to-r from-azul-style from-0% via-white via-40% to-white to-100%'
@@ -92,7 +92,7 @@ const Header = () => {
       {/* Mobile dropdown menu */}
       {menuOpen && (
         <div
-          className='fixed top-[60px] left-0 w-full z-40 md:hidden py-6'
+          className='fixed top-[60px] left-0 w-full z-40 xl:hidden py-6'
           style={{ backgroundColor: 'rgba(24, 0, 38, 0.97)' }}
         >
           <ul className='flex flex-col items-center gap-6 text-white font-archivo font-bold text-lg'>
