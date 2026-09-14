@@ -92,7 +92,7 @@ const Header = () => {
       {/* Mobile dropdown menu */}
       {menuOpen && (
         <div
-          className='fixed top-[60px] left-0 w-full z-40 xl:hidden py-6'
+          className='fixed top-[60px] left-0 w-full z-50 xl:hidden py-6'
           style={{ backgroundColor: 'rgba(24, 0, 38, 0.97)' }}
         >
           <ul className='flex flex-col items-center gap-6 text-white font-archivo font-bold text-lg'>

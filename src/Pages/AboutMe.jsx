@@ -46,12 +46,13 @@ const AboutMe = () => {
 
       {/** Contenedor -Verde- */}
       <Element name='sobreMi'>
-        <div className='relative flex flex-col md:flex-row justify-between my-10 md:my-20 p-5 md:p-8 bg-verde-style/40 overflow-clip rounded-4xl'>
-          {/** Img Path */}
-          <div className='hidden md:block absolute bg-verde-oscuro-style -bottom-5 right-139 rombos-imagen' />
+        <div className='relative flex flex-col md:flex-row justify-between my-10 md:my-20 p-5 md:p-8 bg-verde-style/40 overflow-hidden rounded-4xl'>
+
+          {/** Img Path / SVG - Anclado desde la izquierda para que no viaje al encoger */}
+          <div className='hidden md:block absolute bg-verde-oscuro-style -bottom-5 left-[58%] rombos-imagen -z-0' />
 
           {/** Izquierda del Contenedor */}
-          <div className='flex-2 px-2 md:px-8'>
+          <div className='flex-2 px-2 md:px-8 z-10'>
             <div>
               <h2 className='text-4xl md:text-[65px]/18 mb-5 md:mb-8 font-[CD-Semibold]'>
                 Enfocado en la excelencia
@@ -73,17 +74,17 @@ const AboutMe = () => {
                 - Metodología basada en datos para la toma de
                 decisiones, aplicando análisis cuantitativo para
                 optimizar experiencias de usuario.
-                <br />- Capacidad para resolver problemas
+                <br />
+                - Capacidad para resolver problemas
                 complejos de manera organizada y metódica,
                 desglosando desafíos en componentes manejables.
               </p>
             </div>
             <div className='mt-6 md:mt-8'>
               <a
-                className='rounded-full border-2 border-violeta-oscuro-style py-3 px-6 md:py-4 md:px-8 text-lg md:text-xl font-semibold font-archivo
-                          hover:bg-black hover:text-white transition duration-200 ease-in'
+                className='rounded-full border-2 border-violeta-oscuro-style py-3 px-6 md:py-4 md:px-8 text-lg md:text-xl font-semibold font-archivo hover:bg-black hover:text-white transition duration-200 ease-in'
                 href='https://www.linkedin.com/in/jonatan-paez/'
-                target='blank'
+                target='_blank'
                 rel='noopener noreferrer'
               >
                 Conoce más
