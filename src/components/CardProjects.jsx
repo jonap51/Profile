@@ -27,13 +27,21 @@ const CardProjects = () => {
           className='flex-col w-full sm:w-80 md:w-125 h-auto rounded-4xl overflow-hidden'
         >
           <div className='h-60 sm:h-72 md:h-[60%]'>
-            <a href={data.ref} target='_blank' rel='noreferrer'>
+            {data.ref ? (
+              <a href={data.ref} target='_blank' rel='noreferrer'>
+                <img
+                  className='object-cover w-full h-full rounded-4xl transition duration-400 ease-in-out hover:scale-105'
+                  src={data.imagen}
+                  alt={data.altImg}
+                />
+              </a>
+            ) : (
               <img
-                className='object-cover w-full h-full rounded-4xl transition duration-400 ease-in-out hover:scale-105'
+                className='object-cover w-full h-full rounded-4xl'
                 src={data.imagen}
                 alt={data.altImg}
               />
-            </a>
+            )}
           </div>
 
           <div className='mb-6 flex-col font-archivo'>

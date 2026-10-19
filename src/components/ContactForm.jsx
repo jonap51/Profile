@@ -35,6 +35,13 @@ function ContactForm () {
   const manejarEnvio = async (evento) => {
     evento.preventDefault()
 
+    if (!accessKey) {
+      alert(
+        'El endpoint de Formspree no está configurado. Crea un archivo .env con VITE_FORMSPREE_ENDPOINT (ver .env.example).'
+      )
+      return
+    }
+
     if (validarFormulario()) {
       try {
         const formData = new FormData()
