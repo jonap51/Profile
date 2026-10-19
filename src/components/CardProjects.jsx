@@ -24,9 +24,9 @@ const CardProjects = () => {
       {data.map((data, index) => (
         <div
           key={index}
-          className='flex-col w-full sm:w-80 md:w-125 h-auto rounded-4xl overflow-hidden'
+          className='flex-col w-full sm:w-80 md:w-72 xl:w-80 h-auto rounded-4xl overflow-hidden'
         >
-          <div className='h-60 sm:h-72 md:h-[60%]'>
+          <div className='h-48 sm:h-60 md:h-[45%] flex-shrink-0'>
             {data.ref ? (
               <a href={data.ref} target='_blank' rel='noreferrer'>
                 <img
@@ -44,14 +44,14 @@ const CardProjects = () => {
             )}
           </div>
 
-          <div className='mb-6 flex-col font-archivo'>
+          <div className='mb-6 flex-col font-archivo overflow-wrap break-word'>
             <p className='text-violeta-style text-lg font-bold mt-3'>
               {data.fecha}
             </p>
-            <h2 className='my-2 font-[CD-Semibold] text-xl md:text-2xl'>
+            <h2 className='my-2 font-[CD-Semibold] text-xl md:text-2xl leading-tight'>
               {data.titulo}
             </h2>
-            <p className='text-base md:text-lg text-gray-600'>
+            <p className='text-base md:text-lg text-gray-600 break-words leading-relaxed'>
               {data.descripcion}
             </p>
           </div>
