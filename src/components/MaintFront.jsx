@@ -7,9 +7,9 @@ const MainFront = () => {
       {/* Fila superior: nombre + tagline */}
       <div className='flex flex-col xl:flex-row h-auto xl:h-3/5'>
         <p className='hero-nombre p-4 xl:py-8 xl:pr-8 xl:pl-0 w-full xl:w-2/3 text-center xl:text-left text-white font-[CD-SemiBold] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[5rem] leading-tight'>
-          Soy
+          Interfaces webs
           <br />
-          Jonatan Paez
+          hechas a medida
         </p>
         <p className='hero-tagline px-4 pb-4 xl:flex xl:items-center w-full xl:w-1/3 text-center xl:text-left text-white font-archivo text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight'>
           Cada Pixel Un Latido,
