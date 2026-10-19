@@ -21,8 +21,8 @@ const MainBack = () => {
 
       <p className='h-full w-full flex
             justify-center items-center
-            font-[CD-Medium] font-bold text-[150px] text-white
-            blur-[5px] opacity-20  '
+            font-[CD-Medium] font-bold text-[60px] sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[150px] text-white
+            blur-[5px] opacity-20 leading-none'
       >
         Scilicet Developer
       </p>

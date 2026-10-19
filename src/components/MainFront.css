@@ -118,3 +118,10 @@
         width: 100%;
     }
 }
+
+/* Hero: letras contenidas en notebooks (<=1440px) para que no tapen la imagen central */
+@media (max-width: 1440px) {
+    .hero-nombre { font-size: 2.25rem !important; line-height: 1.05 !important; }
+    .hero-tagline { font-size: 1.125rem !important; line-height: 1.15 !important; }
+    .hero-subtitulo { font-size: 2.25rem !important; line-height: 1.05 !important; }
+}

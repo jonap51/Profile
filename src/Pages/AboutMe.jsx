@@ -26,8 +26,8 @@ const AboutMe = () => {
   }, [tools])
 
   return (
-    <div className='mx-4 sm:mx-10 md:mx-30 my-10 md:my-20 relative'>
-      <div className='flex justify-center text-3xl sm:text-5xl md:text-6xl font-[CD-Semibold] bg-white text-center'>
+    <div className='mx-4 sm:mx-10 md:mx-16 my-8 sm:my-16 relative'>
+      <div className='flex justify-center text-2xl sm:text-3xl md:text-4xl font-[CD-Semibold] bg-white text-center'>
         Herramientas que utilizo
       </div>
       {/* Contenedor de la marquesina */}
@@ -46,7 +46,7 @@ const AboutMe = () => {
 
       {/** Contenedor -Verde- */}
       <Element name='sobreMi'>
-        <div className='relative flex flex-col md:flex-row justify-between my-10 md:my-20 p-5 md:p-8 bg-verde-style/40 overflow-hidden rounded-4xl'>
+        <div className='relative flex flex-col md:flex-row justify-between my-8 sm:my-16 md:my-20 p-4 sm:p-6 md:p-8 bg-verde-style/40 overflow-hidden rounded-4xl'>
 
           {/** Img Path / SVG - Anclado desde la izquierda para que no viaje al encoger */}
           <div className='hidden md:block absolute bg-verde-oscuro-style -bottom-5 left-[58%] rombos-imagen -z-0' />
@@ -54,7 +54,7 @@ const AboutMe = () => {
           {/** Izquierda del Contenedor */}
           <div className='flex-2 px-2 md:px-8 z-10'>
             <div>
-              <h2 className='text-4xl md:text-[65px]/18 mb-5 md:mb-8 font-[CD-Semibold]'>
+              <h2 className='text-3xl sm:text-4xl md:text-5xl mb-5 md:mb-8 font-[CD-Semibold] leading-tight'>
                 Enfocado en la excelencia
               </h2>
             </div>

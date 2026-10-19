@@ -43,7 +43,7 @@ const Header = () => {
         <div className='hidden xl:flex items-center w-[calc(100vw-20em)]'>
           <div className='flex-1'>
             <p
-              className='flex text-4xl font-[CD-SemiBold] items-start text-transparent bg-clip-text
+              className='flex text-3xl sm:text-4xl font-[CD-SemiBold] items-start text-transparent bg-clip-text
                   bg-gradient-to-r from-azul-style from-0% via-white via-40% to-white to-100%'
             >
               Jonatan Paez

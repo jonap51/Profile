@@ -4,10 +4,10 @@ import { Element } from 'react-scroll'
 
 const Proyects = () => {
   return (
-    <section className='mx-4 sm:mx-10 md:mx-30'>
+    <section className='mx-4 sm:mx-10 md:mx-16'>
       <Element name='proyectos'>
         <div>
-          <div className='text-4xl md:text-[65px]/18 pb-5 md:pb-8 font-[CD-Semibold]'>
+          <div className='text-3xl sm:text-4xl md:text-5xl pb-5 sm:pb-8 md:pb-10 font-[CD-Semibold] leading-tight'>
             <h2>Mis proyectos</h2>
           </div>
           <div className='flex gap-3 md:gap-0'>

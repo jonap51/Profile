@@ -6,12 +6,12 @@ import { Element } from 'react-scroll'
 const Contact = () => {
   return (
     <Element name='contactame'>
-      <section className='relative flex bg-violeta-oscuro-style p-8 sm:p-16 md:p-30 mt-10 md:mt-20 overflow-hidden'>
+      <section className='relative flex bg-violeta-oscuro-style p-6 sm:p-12 md:p-24 mt-8 sm:mt-16 md:mt-24 overflow-hidden'>
         <div className='flex flex-col md:flex-row w-full min-h-[auto] md:h-100 justify-center items-center gap-8 md:gap-0'>
           <div className='flex w-full md:w-1/2 z-10'>
             <h3
               className='font-[CD-Semibold] leading-[1.4]
- text-white text-3xl sm:text-4xl md:text-6xl'
+ text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl'
             >
               ¿Quieres
               <span className='text-verde-style'> trabajar </span>
